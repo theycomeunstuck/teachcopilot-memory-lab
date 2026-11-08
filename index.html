@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#123d68">
+  <meta name="description" content="Как TeachCopilot может помнить ребёнка: девять подходов, измерения пяти режимов поиска и ответы с проверяемыми источниками.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='9' fill='%23f7fafc'/%3E%3Cpath d='m10 12 20-2-9 21z' fill='none' stroke='%23123d68' stroke-width='2'/%3E%3Ccircle cx='10' cy='12' r='4' fill='%23087d77'/%3E%3Ccircle cx='30' cy='10' r='4' fill='%23123d68'/%3E%3Ccircle cx='21' cy='31' r='4' fill='%23a8670d'/%3E%3C/svg%3E">
+  <title>Память между уроками · TeachCopilot</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="data/results.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержанию</a>
+  <header class="site-header wrap">
+    <a class="brand" href="#main" aria-label="TeachCopilot – начало">
+      <svg width="37" height="38" viewBox="0 0 37 38" aria-hidden="true"><path d="M9 10 27 8M9 10l10 19M27 8l-8 21" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="9" cy="10" r="4.5" fill="#0a8b83"/><circle cx="27" cy="8" r="4.5" fill="#123d68"/><circle cx="19" cy="29" r="4.5" fill="#c48b24"/></svg>
+      <span>TeachCopilot<small>Исследование персональной памяти</small></span>
+    </a>
+    <nav aria-label="Разделы"><a href="#methods">Как устроена память</a><a href="#results">Что измерили</a><a href="#examples">Живые примеры</a><a class="nav-report" href="#downloads">Материалы <span aria-hidden="true">↗</span></a></nav>
+  </header>
+
+  <main id="main">
+    <section class="intro wrap" aria-labelledby="page-title">
+      <div><p class="intro-note"><span class="status-dot"></span>Исследовательский прототип · 7 ноября 2026</p><h1 id="page-title">Урок закончился.<br>Что останется в памяти?</h1></div>
+      <div class="intro-aside"><p>Что ребёнок ответил, какая подсказка помогла и где это было сказано – за коротким <strong>«знает дроби»</strong> стоит целый эпизод.</p><p>Исследуем, как перенести этот контекст в следующий разговор.</p></div>
+    </section>
+
+    <section id="methods" class="memory-lab wrap" aria-labelledby="methods-title">
+      <div class="lab-heading"><h2 id="methods-title">Один эпизод. Девять способов его сохранить.</h2><span class="demo-label">Вымышленный пример для объяснения</span></div>
+      <div class="episode-strip"><span class="session-tag">Урок 1</span><p><span class="speaker">Ребёнок</span> «¼ больше ⅓: четыре больше трёх».</p><span class="episode-arrow" aria-hidden="true">→</span><p><span class="speaker">После подсказки с пирогом</span> «Одна треть больше».</p></div>
+      <div class="lab-body">
+        <div class="method-selector"><p class="control-caption" id="method-label">Выберите способ памяти</p><div id="method-tabs" role="tablist" aria-labelledby="method-label" aria-orientation="vertical"></div><p class="method-footnote">Иллюстрация принципа работы<br>на синтетическом эпизоде.</p></div>
+        <div class="method-workspace" role="tabpanel" id="method-panel" tabindex="0" aria-labelledby="method-tab-hybrid-full">
+          <div class="method-heading"><div><p class="method-position" id="method-kind"></p><h3 id="method-name"></h3></div><span class="diagram-key"><i></i> источник <i></i> память <i></i> риск</span></div>
+          <div id="memory-diagram" class="memory-diagram" tabindex="0" aria-label="Схема памяти. На узком экране можно прокручивать в стороны."></div><p class="diagram-scroll-hint">Схему можно прокрутить в стороны</p>
+          <div class="method-explanation" aria-live="polite"><div><span class="explain-label">Что хранится</span><p id="method-store"></p></div><div><span class="explain-label">Как находится</span><p id="method-find"></p></div><div class="risk-explanation"><span class="explain-label">Что можно потерять</span><p id="method-risk"></p></div></div>
+        </div>
+      </div>
+      <div class="lab-bottom"><p>Для верного вывода нужны исходная реплика, условия и проверка того, как модель поняла ребёнка.</p><a href="#results">Перейти к измерениям <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <section id="results" class="section wrap" aria-labelledby="results-title">
+      <div class="section-intro"><div><p class="section-kicker">Сравним на одних данных</p><h2 id="results-title">Что даёт поиск<br>по прошлым занятиям</h2></div><div class="section-copy"><p>Измеряем пять режимов поиска в одной архитектуре. Девять подходов выше показывают другой уровень сравнения – устройство памяти целиком.</p><p class="muted">Три синтетические истории · 18 ответов на режим · автоматическая оценка</p></div></div>
+      <div class="results-controls"><div class="segmented" role="group" aria-label="История" id="history-filters"><button type="button" data-history="all" aria-pressed="true">Все истории</button><button type="button" data-history="pm-h07" aria-pressed="false">h07</button><button type="button" data-history="pm-h08" aria-pressed="false">h08</button><button type="button" data-history="pm-h09" aria-pressed="false">h09</button></div><p id="history-description" class="filter-caption">Все три истории, одинаковые вопросы для каждого режима</p></div>
+      <div class="review-picker"><label for="review-series">Серия оценки качества</label><select id="review-series"><option value="new">Новая слепая автооценка</option><option value="previous">Прежняя автооценка</option></select><p>Ответы те же. Изменился оценщик и трактовка критериев.</p></div>
+      <div class="measurement-board"><div class="metric-tabs" role="tablist" aria-label="Показатель"><button id="metric-tab-quality" role="tab" aria-selected="true" aria-controls="metric-panel" data-metric="quality">Качество ответов<span>Корректные / все</span></button><button id="metric-tab-recall" role="tab" aria-selected="false" aria-controls="metric-panel" data-metric="recall" tabindex="-1">Источники найдены<span>Source recall в контексте</span></button><button id="metric-tab-latency" role="tab" aria-selected="false" aria-controls="metric-panel" data-metric="latency" tabindex="-1">Время поиска<span>Медиана и p95</span></button></div>
+        <div id="metric-panel" role="tabpanel" aria-labelledby="metric-tab-quality" tabindex="0"><div class="chart-heading"><div><h3 id="chart-title">Сколько ответов оценены корректными</h3><p id="chart-subtitle"></p></div><div class="latency-switch" id="latency-switch" hidden><span>Время:</span><button type="button" data-latency="retrieve" aria-pressed="true">retrieve</button><button type="button" data-latency="pipeline" aria-pressed="false">полный поиск</button></div></div><div id="results-chart" class="results-chart" aria-live="polite"><p class="data-pending">Подключаем проверенные данные…</p></div><p id="chart-footnote" class="chart-footnote"></p></div>
+      </div>
+      <div class="finding"><div class="finding-symbol" aria-hidden="true">≈</div><div><h3>Для текущего прототипа – hybrid</h3><p id="finding-text">Загружаем проверенные результаты сравнения.</p><p class="muted">Вывод относится к этому малому синтетическому корпусу и автоматической оценке. Он не определяет лучший способ памяти вообще.</p></div><a href="#examples">Посмотреть, где ответы различаются <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <section id="examples" class="section examples-section" aria-labelledby="examples-title"><div class="wrap">
+      <div class="section-intro"><div><p class="section-kicker">Проверяем по репликам</p><h2 id="examples-title">Вопрос → память → ответ</h2></div><div class="section-copy"><p>Тексты ниже взяты из сохранённых прогонов. Сравните ответы на один вопрос и проверьте, на какие реплики они опираются.</p><p class="muted">Сами истории вымышлены. Ответы и выбранный контекст – реальные артефакты эксперимента.</p></div></div>
+      <div class="example-controls"><label for="example-select">Вопрос из эксперимента</label><select id="example-select"><option>Данные загружаются</option></select></div>
+      <div id="example-question" class="example-question"></div><p class="example-series-note" id="example-series-note"></p>
+      <div class="compare-selectors"><label>Слева<select id="example-mode-a" aria-label="Первый режим сравнения"></select></label><span aria-hidden="true">сравнить с</span><label>Справа<select id="example-mode-b" aria-label="Второй режим сравнения"></select></label></div>
+      <div id="example-comparison" class="example-comparison" aria-live="polite"></div>
+      <p class="example-reading-note">По идентификаторам можно вернуться к репликам и проверить, достаточно ли их для вывода. <span class="source-swatch"></span> Синим выделены источники, которые модель процитировала.</p>
+    </div></section>
+
+    <section id="architecture" class="section wrap" aria-labelledby="architecture-title">
+      <div class="section-intro"><div><p class="section-kicker">Реализовано в приложении</p><h2 id="architecture-title">Последнее занятие<br>и последние семь</h2></div><div class="section-copy"><p>После завершения занятия приложение собирает краткую сводку из исходных реплик. Преподаватель видит последнее занятие или семь последних и готовит разрешённую область памяти для чата.</p><p class="muted">Базовая personal_memory включена по умолчанию. Поиск работает в режиме hybrid.</p></div></div>
+      <div class="architecture-diagram" tabindex="0" aria-label="Архитектура памяти. На узком экране можно прокручивать в стороны."><svg viewBox="0 0 1160 635" role="img" aria-labelledby="architecture-svg-title architecture-svg-desc"><title id="architecture-svg-title">Сводки одного и семи завершённых занятий и поиск по разрешённым источникам</title><desc id="architecture-svg-desc">Оригиналы завершённых занятий остаются в архиве. Сводки показывают последнее занятие и семь последних. На каждое занятие выбираются до трёх дословных цитат, каждая до 120 символов, с датами, ID и связями исправлений. Преподаватель заранее готовит память и подтверждает область доступа. Во время чата лексический и векторный поиск выбирают исходные реплики только из этой области. Сводки чата ограничены теми же разрешёнными источниками. Базовый путь работает без графового сервиса.</desc><defs><marker id="arch-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="m0 0 8 4-8 4" fill="#7e99ad"/></marker></defs>
+        <text x="22" y="30" class="svg-note">Подготовка памяти преподавателем</text>
+        <g class="arch-line"><path d="M242 165H263V100H285"/><path d="M242 165H263V215H285"/><path d="M520 100H549V157H580"/><path d="M520 215H549V157H580"/><path d="M815 157H870"/><path d="M1000 225V365H402V420"/><path d="M242 233H263V395H272V493H285"/><path d="M520 493H580"/><path d="M815 493H870"/><path d="M242 473H263V600H697V565"/></g>
+        <g class="arch-node source"><rect x="22" y="65" width="220" height="200" rx="9"/><text x="42" y="101" class="svg-h">Оригинальные реплики</text><text x="42" y="138">Завершённые занятия</text><text x="42" y="169">Дата, роль, source ID</text><text x="42" y="200">Исходные тексты</text><text x="42" y="231">Цепочки исправлений</text></g>
+        <g class="arch-node memory"><rect x="285" y="55" width="235" height="90" rx="9"/><text x="305" y="88" class="svg-h">Последнее занятие</text><text x="305" y="117">Сводка одного сеанса</text></g>
+        <g class="arch-node memory"><rect x="285" y="170" width="235" height="90" rx="9"/><text x="305" y="203" class="svg-h">Семь последних</text><text x="305" y="232">Сводка каждого занятия</text></g>
+        <g class="arch-node approval"><rect x="580" y="90" width="235" height="135" rx="9"/><text x="600" y="123" class="svg-h">Преподаватель</text><text x="600" y="151">Готовит память</text><text x="600" y="178">Просматривает источники</text><text x="600" y="205">Подтверждает доступ</text></g>
+        <g class="arch-node source"><rect x="870" y="90" width="260" height="135" rx="9"/><text x="890" y="123" class="svg-h">Разрешённая область</text><text x="890" y="151">Конкретные source ID</text><text x="890" y="178">Тема и версия истории</text><text x="890" y="205">Доступ для этого чата</text></g>
+        <text x="285" y="298" class="svg-note">До 3 дословных цитат на занятие, каждая до 120 символов</text><text x="285" y="324" class="svg-note">С датами, ID и ссылками на исправления</text>
+        <text x="22" y="389" class="svg-note">Во время разговора с ребёнком</text>
+        <g class="arch-node"><rect x="22" y="420" width="220" height="105" rx="9"/><text x="42" y="458" class="svg-h">Новый вопрос</text><text x="42" y="490">На следующем занятии</text></g>
+        <g class="arch-node source"><rect x="285" y="420" width="235" height="145" rx="9"/><text x="305" y="454" class="svg-h">Разрешённые реплики</text><text x="305" y="484">Из подтверждённой</text><text x="305" y="511">области истории ребёнка</text><text x="305" y="542">Сводки в том же доступе</text></g>
+        <g class="arch-node memory"><rect x="580" y="420" width="235" height="145" rx="9"/><text x="600" y="454" class="svg-h">Поиск hybrid</text><text x="600" y="484">Совпадение слов</text><text x="600" y="511">Векторная близость</text><text x="600" y="542">Отбор по бюджету</text></g>
+        <g class="arch-node"><rect x="870" y="435" width="260" height="115" rx="9"/><text x="890" y="470" class="svg-h">Ответ с источниками</text><text x="890" y="500">Вопрос, подсказка и ответ</text><text x="890" y="527">ребёнка остаются рядом</text></g>
+      </svg></div>
+      <p class="diagram-scroll-hint">Схему можно прокрутить в стороны</p><div class="architecture-caption"><p>Краткая сводка помогает сориентироваться. Полные реплики остаются в архиве и подгружаются по вопросу.</p><p>Преподаватель подтверждает доступ при подготовке памяти. После исправления истории приложение проверяет актуальность версии.</p></div><p class="architecture-research-note">Graphiti и графовый поиск остаются отдельным исследовательским вариантом. Этот экспериментальный путь включается явно.</p>
+    </section>
+
+    <section id="downloads" class="section downloads-section wrap" aria-labelledby="downloads-title"><div class="downloads-heading"><div><p class="section-kicker">Данные доступны для проверки</p><h2 id="downloads-title">Забрать материалы</h2></div><p>Графики можно использовать отдельно.<br>Методика и ограничения – в отчёте.</p></div><div class="download-list" id="download-list"><div class="download-row"><span>Качество ответов <small>новая слепая автооценка</small></span><div><a href="figures/quality.png" download>PNG</a><a href="figures/quality.svg" download>SVG</a></div></div><div class="download-row"><span>Полнота найденных источников</span><div><a href="figures/recall.png" download>PNG</a><a href="figures/recall.svg" download>SVG</a></div></div><div class="download-row"><span>Задержка поиска</span><div><a href="figures/latency.png" download>PNG</a><a href="figures/latency.svg" download>SVG</a></div></div><div class="download-row"><span>Слои памяти <small>концептуальная схема</small></span><div><a href="figures/memory-layers.png" download>PNG</a><a href="figures/memory-layers.svg" download>SVG</a></div></div><div class="download-row report-row"><span>Исследовательский отчёт</span><div><a href="downloads/report.docx" download>DOCX</a><a href="downloads/report.pdf">Читать PDF <span aria-hidden="true">↗</span></a><a href="downloads/report.md" download>Текст</a><a href="data/results.json" download>Данные JSON</a></div></div></div>
+      <details class="limits"><summary>Как читать это исследование</summary><div id="limitations-content"><p>Малый синтетический корпус и автоматические вердикты не заменяют независимую проверку человеком. Здесь нет вывода о готовности к использованию с настоящими детьми.</p></div></details>
+    </section>
+  </main>
+  <footer class="site-footer wrap"><p>TeachCopilot · лаборатория персональной памяти</p><p>Синтетические истории. Проверяемые источники. Осторожные выводы.</p><a href="#main">К началу ↑</a></footer>
+</body>
+</html>

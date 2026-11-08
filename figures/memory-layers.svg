@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="467.716535pt" height="424.8pt" viewBox="0 0 467.716535 424.8" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-07T04:33:26.890760</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>TeachCopilot source.py</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 424.8 
+L 467.716535 424.8 
+L 467.716535 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 27.679465 186.538176 
+L 146.428016 186.538176 
+Q 154.257591 186.538176 154.257591 181.491552 
+L 154.257591 114.763968 
+Q 154.257591 109.717344 146.428016 109.717344 
+L 27.679465 109.717344 
+Q 19.84989 109.717344 19.84989 114.763968 
+L 19.84989 181.491552 
+Q 19.84989 186.538176 27.679465 186.538176 
+z
+" clip-path="url(#p9aef66832a)" style="fill: #ffffff; stroke: #2667a5; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 173.396551 186.538176 
+L 292.145102 186.538176 
+Q 299.974677 186.538176 299.974677 181.491552 
+L 299.974677 114.763968 
+Q 299.974677 109.717344 292.145102 109.717344 
+L 173.396551 109.717344 
+Q 165.566976 109.717344 165.566976 114.763968 
+L 165.566976 181.491552 
+Q 165.566976 186.538176 173.396551 186.538176 
+z
+" clip-path="url(#p9aef66832a)" style="fill: #ffffff; stroke: #087f8c; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 319.113638 186.538176 
+L 437.862189 186.538176 
+Q 445.691764 186.538176 445.691764 181.491552 
+L 445.691764 114.763968 
+Q 445.691764 109.717344 437.862189 109.717344 
+L 319.113638 109.717344 
+Q 311.284063 109.717344 311.284063 114.763968 
+L 311.284063 181.491552 
+Q 311.284063 186.538176 319.113638 186.538176 
+z
+" clip-path="url(#p9aef66832a)" style="fill: #ffffff; stroke: #c88918; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 153.216132 148.12776 
+Q 158.827547 148.12776 163.153223 148.12776 
+" clip-path="url(#p9aef66832a)" style="fill: none; stroke: #5c6f7b; stroke-width: 1.15; stroke-linecap: round"/>
+    <path d="M 159.153223 146.12776 
+L 163.153223 148.12776 
+L 159.153223 150.12776 
+z
+" clip-path="url(#p9aef66832a)" style="fill: #5c6f7b; stroke: #5c6f7b; stroke-width: 1.15; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 298.933219 148.12776 
+Q 304.544634 148.12776 308.87031 148.12776 
+" clip-path="url(#p9aef66832a)" style="fill: none; stroke: #5c6f7b; stroke-width: 1.15; stroke-linecap: round"/>
+    <path d="M 304.87031 146.12776 
+L 308.87031 148.12776 
+L 304.87031 150.12776 
+z
+" clip-path="url(#p9aef66832a)" style="fill: #5c6f7b; stroke: #5c6f7b; stroke-width: 1.15; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 27.679465 290.274336 
+L 146.428016 290.274336 
+Q 154.257591 290.274336 154.257591 285.227712 
+L 154.257591 224.107488 
+Q 154.257591 219.060864 146.428016 219.060864 
+L 27.679465 219.060864 
+Q 19.84989 219.060864 19.84989 224.107488 
+L 19.84989 285.227712 
+Q 19.84989 290.274336 27.679465 290.274336 
+z
+" clip-path="url(#p9aef66832a)" style="fill: #ffffff; stroke: #2667a5; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 173.396551 290.274336 
+L 437.862189 290.274336 
+Q 445.691764 290.274336 445.691764 285.227712 
+L 445.691764 224.107488 
+Q 445.691764 219.060864 437.862189 219.060864 
+L 173.396551 219.060864 
+Q 165.566976 219.060864 165.566976 224.107488 
+L 165.566976 285.227712 
+Q 165.566976 290.274336 173.396551 290.274336 
+z
+" clip-path="url(#p9aef66832a)" style="fill: #ffffff; stroke: #087f8c; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 153.216132 254.6676 
+Q 158.827547 254.6676 163.153223 254.6676 
+" clip-path="url(#p9aef66832a)" style="fill: none; stroke: #5c6f7b; stroke-width: 1.15; stroke-linecap: round"/>
+    <path d="M 159.153223 252.6676 
+L 163.153223 254.6676 
+L 159.153223 256.6676 
+z
+" clip-path="url(#p9aef66832a)" style="fill: #5c6f7b; stroke: #5c6f7b; stroke-width: 1.15; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 377.400472 187.977526 
+Q 377.400472 202.801029 377.400472 216.338792 
+" clip-path="url(#p9aef66832a)" style="fill: none; stroke: #c88918; stroke-width: 1.15; stroke-linecap: round"/>
+    <path d="M 379.400472 212.338792 
+L 377.400472 216.338792 
+L 375.400472 212.338792 
+z
+" clip-path="url(#p9aef66832a)" style="fill: #c88918; stroke: #c88918; stroke-width: 1.15; stroke-linecap: round"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 173.396551 365.973696 
+L 437.862189 365.973696 
+Q 445.691764 365.973696 445.691764 360.927072 
+L 445.691764 302.610528 
+Q 445.691764 297.563904 437.862189 297.563904 
+L 173.396551 297.563904 
+Q 165.566976 297.563904 165.566976 302.610528 
+L 165.566976 360.927072 
+Q 165.566976 365.973696 173.396551 365.973696 
+z
+" clip-path="url(#p9aef66832a)" style="fill: #ffffff; stroke: #2667a5; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 305.62937 291.713686 
+Q 305.62937 293.919017 305.62937 294.838608 
+" clip-path="url(#p9aef66832a)" style="fill: none; stroke: #087f8c; stroke-width: 1.15; stroke-linecap: round"/>
+    <path d="M 307.62937 290.838608 
+L 305.62937 294.838608 
+L 303.62937 290.838608 
+z
+" clip-path="url(#p9aef66832a)" style="fill: #087f8c; stroke: #087f8c; stroke-width: 1.15; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Source Sans 3'; text-anchor: start; fill: #2667a5" x="34.639087" y="136.96232" transform="rotate(-0 34.639087 136.96232)">Последнее занятие</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 9px; font-family: 'Source Sans 3'; fill: #172b3a" transform="translate(34.639087 152.379141)">Сводка завершённого</text>
+    <text style="font-size: 9px; font-family: 'Source Sans 3'; fill: #172b3a" transform="translate(34.639087 167.695059)">сеанса, 1 занятие</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Source Sans 3'; text-anchor: start; fill: #087f8c" x="180.356173" y="136.96232" transform="rotate(-0 180.356173 136.96232)">Скользящая память</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 9px; font-family: 'Source Sans 3'; fill: #172b3a" transform="translate(180.356173 152.387578)">Недавние занятия</text>
+    <text style="font-size: 9px; font-family: 'Source Sans 3'; fill: #172b3a" transform="translate(180.356173 168.792638)">Окно 7 занятий</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Source Sans 3'; text-anchor: start; fill: #c88918" x="326.07326" y="136.96232" transform="rotate(-0 326.07326 136.96232)">Архив источников</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 9px; font-family: 'Source Sans 3'; fill: #172b3a" transform="translate(326.07326 152.239219)">Исходные реплики</text>
+    <text style="font-size: 9px; font-family: 'Source Sans 3'; fill: #172b3a" transform="translate(326.07326 167.870841)">и их идентификаторы</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Source Sans 3'; text-anchor: start; fill: #2667a5" x="34.639087" y="246.30584" transform="rotate(-0 34.639087 246.30584)">Вопрос пользователя</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 9px; font-family: 'Source Sans 3'; fill: #172b3a" transform="translate(34.639087 261.564458)">Что нужно вспомнить</text>
+    <text style="font-size: 9px; font-family: 'Source Sans 3'; fill: #172b3a" transform="translate(34.639087 277.061079)">о занятиях и ученике?</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Source Sans 3'; text-anchor: start; fill: #087f8c" x="180.356173" y="246.30584" transform="rotate(-0 180.356173 246.30584)">Гибридное извлечение по запросу</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 9px; font-family: 'Source Sans 3'; fill: #172b3a" transform="translate(180.356173 261.91602)">Лексический + векторный поиск → отбор источников</text>
+    <text style="font-size: 9px; font-family: 'Source Sans 3'; fill: #172b3a" transform="translate(180.356173 277.267798)">Графовые связи – дополнительный канал, если включён</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Source Sans 3'; text-anchor: start; fill: #2667a5" x="180.356173" y="324.80888" transform="rotate(-0 180.356173 324.80888)">Ответ с опорой на источники</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 9px; font-family: 'Source Sans 3'; fill: #172b3a" transform="translate(180.356173 340.139919)">Факты + ссылки на реплики. Данных недостаточно –</text>
+    <text style="font-size: 9px; font-family: 'Source Sans 3'; fill: #172b3a" transform="translate(180.356173 355.79826)">обоснованная неопределённость.</text>
+   </g>
+  </g>
+  <g id="text_13">
+   <text style="font-weight: 700; font-size: 9px; font-family: 'Source Sans 3'; text-anchor: start; fill: #087f8c" x="18.708661" y="19.836" transform="rotate(-0 18.708661 19.836)">КАК УСТРОЕНА ПАМЯТЬ</text>
+  </g>
+  <g id="text_14">
+   <text style="font-weight: 700; font-size: 17px; font-family: 'Source Sans 3'; text-anchor: start; fill: #172b3a" x="18.708661" y="45.02" transform="rotate(-0 18.708661 45.02)">От урока к проверяемому ответу</text>
+  </g>
+  <g id="text_15">
+   <text style="font-size: 10px; font-family: 'Source Sans 3'; text-anchor: start; fill: #5c6f7b" x="18.708661" y="76.084" transform="rotate(-0 18.708661 76.084)">Концептуальная схема слоёв памяти и извлечения</text>
+  </g>
+  <g id="text_16">
+   <text style="font-size: 10px; font-family: 'Source Sans 3'; text-anchor: start; fill: #172b3a" x="18.708661" y="394.2144" transform="rotate(-0 18.708661 394.2144)">Архив сохраняет основание для проверки. Резюме помогает удерживать контекст.</text>
+  </g>
+  <g id="text_17">
+   <text style="font-size: 9px; font-family: 'Source Sans 3'; text-anchor: start; fill: #5c6f7b" x="18.708661" y="412.056" transform="rotate(-0 18.708661 412.056)">Окна 1 / 7 иллюстрируют сводки памяти. Результаты пяти режимов показаны отдельно.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p9aef66832a">
+   <rect x="16.370079" y="93.456" width="434.976378" height="280.368"/>
+  </clipPath>
+ </defs>
+</svg>

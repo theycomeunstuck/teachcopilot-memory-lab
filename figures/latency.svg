@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="467.716535pt" height="439.2pt" viewBox="0 0 467.716535 439.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-07T04:33:26.541538</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>TeachCopilot source.py</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 439.2 
+L 467.716535 439.2 
+L 467.716535 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 128.434961 154.422101 
+L 143.106779 154.422101 
+L 143.106779 144.914349 
+L 128.434961 144.914349 
+z
+" clip-path="url(#p012fa04eab)" style="fill: #2667a5; opacity: 0.09"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 229.555276 154.422101 
+L 249.9174 154.422101 
+L 249.9174 144.914349 
+L 229.555276 144.914349 
+z
+" clip-path="url(#p012fa04eab)" style="fill: #2667a5; opacity: 0.09"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 330.675591 154.422101 
+L 348.075117 154.422101 
+L 348.075117 144.914349 
+L 330.675591 144.914349 
+z
+" clip-path="url(#p012fa04eab)" style="fill: #2667a5; opacity: 0.09"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 128.434961 170.814777 
+L 137.059657 170.814777 
+L 137.059657 161.307025 
+L 128.434961 161.307025 
+z
+" clip-path="url(#p012fa04eab)" style="fill: #2667a5; opacity: 0.09"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 229.555276 170.814777 
+L 245.873197 170.814777 
+L 245.873197 161.307025 
+L 229.555276 161.307025 
+z
+" clip-path="url(#p012fa04eab)" style="fill: #2667a5; opacity: 0.09"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 330.675591 170.814777 
+L 339.332936 170.814777 
+L 339.332936 161.307025 
+L 330.675591 161.307025 
+z
+" clip-path="url(#p012fa04eab)" style="fill: #2667a5; opacity: 0.09"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 128.434961 187.207454 
+L 145.090257 187.207454 
+L 145.090257 177.699701 
+L 128.434961 177.699701 
+z
+" clip-path="url(#p012fa04eab)" style="fill: #2667a5; opacity: 0.09"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 229.555276 187.207454 
+L 247.651657 187.207454 
+L 247.651657 177.699701 
+L 229.555276 177.699701 
+z
+" clip-path="url(#p012fa04eab)" style="fill: #2667a5; opacity: 0.09"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 330.675591 187.207454 
+L 347.978946 187.207454 
+L 347.978946 177.699701 
+L 330.675591 177.699701 
+z
+" clip-path="url(#p012fa04eab)" style="fill: #2667a5; opacity: 0.09"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 128.434961 203.60013 
+L 147.149222 203.60013 
+L 147.149222 194.092377 
+L 128.434961 194.092377 
+z
+" clip-path="url(#p012fa04eab)" style="fill: #2667a5; opacity: 0.09"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 229.555276 203.60013 
+L 255.630862 203.60013 
+L 255.630862 194.092377 
+L 229.555276 194.092377 
+z
+" clip-path="url(#p012fa04eab)" style="fill: #2667a5; opacity: 0.09"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 330.675591 203.60013 
+L 348.219455 203.60013 
+L 348.219455 194.092377 
+L 330.675591 194.092377 
+z
+" clip-path="url(#p012fa04eab)" style="fill: #2667a5; opacity: 0.09"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 128.434961 219.992806 
+L 185.028117 219.992806 
+L 185.028117 210.485054 
+L 128.434961 210.485054 
+z
+" clip-path="url(#p012fa04eab)" style="fill: #2667a5; opacity: 0.09"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 229.555276 219.992806 
+L 307.03015 219.992806 
+L 307.03015 210.485054 
+L 229.555276 210.485054 
+z
+" clip-path="url(#p012fa04eab)" style="fill: #2667a5; opacity: 0.09"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 330.675591 219.992806 
+L 388.034275 219.992806 
+L 388.034275 210.485054 
+L 330.675591 210.485054 
+z
+" clip-path="url(#p012fa04eab)" style="fill: #2667a5; opacity: 0.09"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 18.708661 157.864563 
+L 449.007874 157.864563 
+" clip-path="url(#p012fa04eab)" style="fill: none; stroke: #dce5eb; stroke-width: 0.6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 18.708661 174.257239 
+L 449.007874 174.257239 
+" clip-path="url(#p012fa04eab)" style="fill: none; stroke: #dce5eb; stroke-width: 0.6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 18.708661 190.649915 
+L 449.007874 190.649915 
+" clip-path="url(#p012fa04eab)" style="fill: none; stroke: #dce5eb; stroke-width: 0.6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 18.708661 207.042592 
+L 449.007874 207.042592 
+" clip-path="url(#p012fa04eab)" style="fill: none; stroke: #dce5eb; stroke-width: 0.6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 18.708661 223.435268 
+L 449.007874 223.435268 
+" clip-path="url(#p012fa04eab)" style="fill: none; stroke: #dce5eb; stroke-width: 0.6; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Source Sans 3'; text-anchor: start; fill: #2667a5" x="18.708661" y="112.784704" transform="rotate(-0 18.708661 112.784704)">Только извлечение источников</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 11px; font-family: 'Source Sans 3'; text-anchor: end; fill: #5c6f7b" x="449.007874" y="112.784704" transform="rotate(-0 449.007874 112.784704)">мс</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="171.464882" y="131.636282" transform="rotate(-0 171.464882 131.636282)">H07</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="272.585197" y="131.636282" transform="rotate(-0 272.585197 131.636282)">H08</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="373.705512" y="131.636282" transform="rotate(-0 373.705512 131.636282)">H09</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10px; font-family: 'Source Sans 3'; text-anchor: start; fill: #172b3a" x="18.708661" y="152.788225" transform="rotate(-0 18.708661 152.788225)">Хронология</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="171.464882" y="153.100225" transform="rotate(-0 171.464882 153.100225)">45 / 63</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="272.585197" y="153.100225" transform="rotate(-0 272.585197 153.100225)">63 / 73</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="373.705512" y="153.100225" transform="rotate(-0 373.705512 153.100225)">54 / 64</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 10px; font-family: 'Source Sans 3'; text-anchor: start; fill: #172b3a" x="18.708661" y="169.180901" transform="rotate(-0 18.708661 169.180901)">Лексический</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="171.464882" y="169.492901" transform="rotate(-0 171.464882 169.492901)">27 / 35</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="272.585197" y="169.492901" transform="rotate(-0 272.585197 169.492901)">51 / 65</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="373.705512" y="169.492901" transform="rotate(-0 373.705512 169.492901)">27 / 34</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 10px; font-family: 'Source Sans 3'; text-anchor: start; fill: #172b3a" x="18.708661" y="185.573577" transform="rotate(-0 18.708661 185.573577)">Векторный</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="171.464882" y="185.885577" transform="rotate(-0 171.464882 185.885577)">52 / 63</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="272.585197" y="185.885577" transform="rotate(-0 272.585197 185.885577)">56 / 67</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="373.705512" y="185.885577" transform="rotate(-0 373.705512 185.885577)">54 / 65</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 10px; font-family: 'Source Sans 3'; text-anchor: start; fill: #172b3a" x="18.708661" y="201.966254" transform="rotate(-0 18.708661 201.966254)">Гибридный</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="171.464882" y="202.278254" transform="rotate(-0 171.464882 202.278254)">58 / 67</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="272.585197" y="202.278254" transform="rotate(-0 272.585197 202.278254)">81 / 93</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="373.705512" y="202.278254" transform="rotate(-0 373.705512 202.278254)">54 / 65</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 10px; font-family: 'Source Sans 3'; text-anchor: start; fill: #172b3a" x="18.708661" y="218.35893" transform="rotate(-0 18.708661 218.35893)">Граф + гибрид</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="171.464882" y="218.67093" transform="rotate(-0 171.464882 218.67093)">175 / 193</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="272.585197" y="218.67093" transform="rotate(-0 272.585197 218.67093)">240 / 266</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="373.705512" y="218.67093" transform="rotate(-0 373.705512 218.67093)">178 / 193</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_17">
+    <path d="M 128.434961 299.358101 
+L 146.778958 299.358101 
+L 146.778958 289.850349 
+L 128.434961 289.850349 
+z
+" clip-path="url(#pa821a56d9a)" style="fill: #087f8c; opacity: 0.09"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 229.555276 299.358101 
+L 302.278238 299.358101 
+L 302.278238 289.850349 
+L 229.555276 289.850349 
+z
+" clip-path="url(#pa821a56d9a)" style="fill: #087f8c; opacity: 0.09"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 330.675591 299.358101 
+L 348.58419 299.358101 
+L 348.58419 289.850349 
+L 330.675591 289.850349 
+z
+" clip-path="url(#pa821a56d9a)" style="fill: #087f8c; opacity: 0.09"/>
+   </g>
+   <g id="patch_20">
+    <path d="M 128.434961 315.750777 
+L 132.841002 315.750777 
+L 132.841002 306.243025 
+L 128.434961 306.243025 
+z
+" clip-path="url(#pa821a56d9a)" style="fill: #087f8c; opacity: 0.09"/>
+   </g>
+   <g id="patch_21">
+    <path d="M 229.555276 315.750777 
+L 239.952857 315.750777 
+L 239.952857 306.243025 
+L 229.555276 306.243025 
+z
+" clip-path="url(#pa821a56d9a)" style="fill: #087f8c; opacity: 0.09"/>
+   </g>
+   <g id="patch_22">
+    <path d="M 330.675591 315.750777 
+L 334.986407 315.750777 
+L 334.986407 306.243025 
+L 330.675591 306.243025 
+z
+" clip-path="url(#pa821a56d9a)" style="fill: #087f8c; opacity: 0.09"/>
+   </g>
+   <g id="patch_23">
+    <path d="M 128.434961 332.143454 
+L 146.42595 332.143454 
+L 146.42595 322.635701 
+L 128.434961 322.635701 
+z
+" clip-path="url(#pa821a56d9a)" style="fill: #087f8c; opacity: 0.09"/>
+   </g>
+   <g id="patch_24">
+    <path d="M 229.555276 332.143454 
+L 312.667921 332.143454 
+L 312.667921 322.635701 
+L 229.555276 322.635701 
+z
+" clip-path="url(#pa821a56d9a)" style="fill: #087f8c; opacity: 0.09"/>
+   </g>
+   <g id="patch_25">
+    <path d="M 330.675591 332.143454 
+L 349.732955 332.143454 
+L 349.732955 322.635701 
+L 330.675591 322.635701 
+z
+" clip-path="url(#pa821a56d9a)" style="fill: #087f8c; opacity: 0.09"/>
+   </g>
+   <g id="patch_26">
+    <path d="M 128.434961 348.53613 
+L 146.080365 348.53613 
+L 146.080365 339.028377 
+L 128.434961 339.028377 
+z
+" clip-path="url(#pa821a56d9a)" style="fill: #087f8c; opacity: 0.09"/>
+   </g>
+   <g id="patch_27">
+    <path d="M 229.555276 348.53613 
+L 312.934494 348.53613 
+L 312.934494 339.028377 
+L 229.555276 339.028377 
+z
+" clip-path="url(#pa821a56d9a)" style="fill: #087f8c; opacity: 0.09"/>
+   </g>
+   <g id="patch_28">
+    <path d="M 330.675591 348.53613 
+L 348.643879 348.53613 
+L 348.643879 339.028377 
+L 330.675591 339.028377 
+z
+" clip-path="url(#pa821a56d9a)" style="fill: #087f8c; opacity: 0.09"/>
+   </g>
+   <g id="patch_29">
+    <path d="M 128.434961 364.928806 
+L 148.050451 364.928806 
+L 148.050451 355.421054 
+L 128.434961 355.421054 
+z
+" clip-path="url(#pa821a56d9a)" style="fill: #087f8c; opacity: 0.09"/>
+   </g>
+   <g id="patch_30">
+    <path d="M 229.555276 364.928806 
+L 314.786924 364.928806 
+L 314.786924 355.421054 
+L 229.555276 355.421054 
+z
+" clip-path="url(#pa821a56d9a)" style="fill: #087f8c; opacity: 0.09"/>
+   </g>
+   <g id="patch_31">
+    <path d="M 330.675591 364.928806 
+L 349.841687 364.928806 
+L 349.841687 355.421054 
+L 330.675591 355.421054 
+z
+" clip-path="url(#pa821a56d9a)" style="fill: #087f8c; opacity: 0.09"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 18.708661 302.800563 
+L 449.007874 302.800563 
+" clip-path="url(#pa821a56d9a)" style="fill: none; stroke: #dce5eb; stroke-width: 0.6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_7">
+    <path d="M 18.708661 319.193239 
+L 449.007874 319.193239 
+" clip-path="url(#pa821a56d9a)" style="fill: none; stroke: #dce5eb; stroke-width: 0.6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_8">
+    <path d="M 18.708661 335.585915 
+L 449.007874 335.585915 
+" clip-path="url(#pa821a56d9a)" style="fill: none; stroke: #dce5eb; stroke-width: 0.6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_9">
+    <path d="M 18.708661 351.978592 
+L 449.007874 351.978592 
+" clip-path="url(#pa821a56d9a)" style="fill: none; stroke: #dce5eb; stroke-width: 0.6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_10">
+    <path d="M 18.708661 368.371268 
+L 449.007874 368.371268 
+" clip-path="url(#pa821a56d9a)" style="fill: none; stroke: #dce5eb; stroke-width: 0.6; stroke-linecap: square"/>
+   </g>
+   <g id="text_26">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Source Sans 3'; text-anchor: start; fill: #087f8c" x="18.708661" y="257.720704" transform="rotate(-0 18.708661 257.720704)">Полный поисковый процесс</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 11px; font-family: 'Source Sans 3'; text-anchor: end; fill: #5c6f7b" x="449.007874" y="257.720704" transform="rotate(-0 449.007874 257.720704)">с</text>
+   </g>
+   <g id="text_28">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="171.464882" y="276.572282" transform="rotate(-0 171.464882 276.572282)">H07</text>
+   </g>
+   <g id="text_29">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="272.585197" y="276.572282" transform="rotate(-0 272.585197 276.572282)">H08</text>
+   </g>
+   <g id="text_30">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="373.705512" y="276.572282" transform="rotate(-0 373.705512 276.572282)">H09</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 10px; font-family: 'Source Sans 3'; text-anchor: start; fill: #172b3a" x="18.708661" y="297.724225" transform="rotate(-0 18.708661 297.724225)">Хронология</text>
+   </g>
+   <g id="text_32">
+    <text style="font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="171.464882" y="298.036225" transform="rotate(-0 171.464882 298.036225)">1,56 / 2,03</text>
+   </g>
+   <g id="text_33">
+    <text style="font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="272.585197" y="298.036225" transform="rotate(-0 272.585197 298.036225)">6,19 / 6,58</text>
+   </g>
+   <g id="text_34">
+    <text style="font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="373.705512" y="298.036225" transform="rotate(-0 373.705512 298.036225)">1,52 / 1,97</text>
+   </g>
+   <g id="text_35">
+    <text style="font-size: 10px; font-family: 'Source Sans 3'; text-anchor: start; fill: #172b3a" x="18.708661" y="314.116901" transform="rotate(-0 18.708661 314.116901)">Лексический</text>
+   </g>
+   <g id="text_36">
+    <text style="font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="171.464882" y="314.428901" transform="rotate(-0 171.464882 314.428901)">0,38 / 0,42</text>
+   </g>
+   <g id="text_37">
+    <text style="font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="272.585197" y="314.428901" transform="rotate(-0 272.585197 314.428901)">0,89 / 0,91</text>
+   </g>
+   <g id="text_38">
+    <text style="font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="373.705512" y="314.428901" transform="rotate(-0 373.705512 314.428901)">0,37 / 0,38</text>
+   </g>
+   <g id="text_39">
+    <text style="font-size: 10px; font-family: 'Source Sans 3'; text-anchor: start; fill: #172b3a" x="18.708661" y="330.509577" transform="rotate(-0 18.708661 330.509577)">Векторный</text>
+   </g>
+   <g id="text_40">
+    <text style="font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="171.464882" y="330.821577" transform="rotate(-0 171.464882 330.821577)">1,53 / 2,01</text>
+   </g>
+   <g id="text_41">
+    <text style="font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="272.585197" y="330.821577" transform="rotate(-0 272.585197 330.821577)">7,07 / 7,16</text>
+   </g>
+   <g id="text_42">
+    <text style="font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="373.705512" y="330.821577" transform="rotate(-0 373.705512 330.821577)">1,62 / 2,08</text>
+   </g>
+   <g id="text_43">
+    <text style="font-size: 10px; font-family: 'Source Sans 3'; text-anchor: start; fill: #172b3a" x="18.708661" y="346.902254" transform="rotate(-0 18.708661 346.902254)">Гибридный</text>
+   </g>
+   <g id="text_44">
+    <text style="font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="171.464882" y="347.214254" transform="rotate(-0 171.464882 347.214254)">1,50 / 1,61</text>
+   </g>
+   <g id="text_45">
+    <text style="font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="272.585197" y="347.214254" transform="rotate(-0 272.585197 347.214254)">7,10 / 7,22</text>
+   </g>
+   <g id="text_46">
+    <text style="font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="373.705512" y="347.214254" transform="rotate(-0 373.705512 347.214254)">1,53 / 1,65</text>
+   </g>
+   <g id="text_47">
+    <text style="font-size: 10px; font-family: 'Source Sans 3'; text-anchor: start; fill: #172b3a" x="18.708661" y="363.29493" transform="rotate(-0 18.708661 363.29493)">Граф + гибрид</text>
+   </g>
+   <g id="text_48">
+    <text style="font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="171.464882" y="363.60693" transform="rotate(-0 171.464882 363.60693)">1,67 / 2,16</text>
+   </g>
+   <g id="text_49">
+    <text style="font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="272.585197" y="363.60693" transform="rotate(-0 272.585197 363.60693)">7,26 / 7,33</text>
+   </g>
+   <g id="text_50">
+    <text style="font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="373.705512" y="363.60693" transform="rotate(-0 373.705512 363.60693)">1,63 / 2,04</text>
+   </g>
+  </g>
+  <g id="text_51">
+   <text style="font-weight: 700; font-size: 9px; font-family: 'Source Sans 3'; text-anchor: start; fill: #087f8c" x="18.708661" y="20.196" transform="rotate(-0 18.708661 20.196)">ЗАДЕРЖКИ · СЕРИЯ 002</text>
+  </g>
+  <g id="text_52">
+   <text style="font-weight: 700; font-size: 17px; font-family: 'Source Sans 3'; text-anchor: start; fill: #172b3a" x="18.708661" y="45.956" transform="rotate(-0 18.708661 45.956)">Извлечение и полный поисковый процесс</text>
+  </g>
+  <g id="text_53">
+   <text style="font-size: 10px; font-family: 'Source Sans 3'; text-anchor: start; fill: #5c6f7b" x="18.708661" y="78.316" transform="rotate(-0 18.708661 78.316)">В каждой ячейке p50 (медиана) / p95. Тёплые повторы, меньше – быстрее.</text>
+  </g>
+  <g id="text_54">
+   <text style="font-size: 10px; font-family: 'Source Sans 3'; text-anchor: start; fill: #172b3a" x="18.708661" y="396.736" transform="rotate(-0 18.708661 396.736)">n = 18 тёплых измерений на режим и историю, 6 вопросов × 3 повтора.</text>
+  </g>
+  <g id="text_55">
+   <text style="font-size: 8px; font-family: 'Source Sans 3'; fill: #5c6f7b" transform="translate(18.708661 412.98295)">Полоса пропорциональна p50 внутри блока. p95 описывает малую выборку.</text>
+   <text style="font-size: 8px; font-family: 'Source Sans 3'; fill: #5c6f7b" transform="translate(18.708661 426.37335)">Включены подготовка запроса и поиск. Генерация ответа измеряется отдельно.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p012fa04eab">
+   <rect x="18.708661" y="105.408" width="430.299213" height="116.388"/>
+  </clipPath>
+  <clipPath id="pa821a56d9a">
+   <rect x="18.708661" y="250.344" width="430.299213" height="116.388"/>
+  </clipPath>
+ </defs>
+</svg>

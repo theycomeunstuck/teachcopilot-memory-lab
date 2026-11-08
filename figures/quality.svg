@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="467.716535pt" height="338.4pt" viewBox="0 0 467.716535 338.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-07T04:33:27.139391</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>TeachCopilot source.py</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 338.4 
+L 467.716535 338.4 
+L 467.716535 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 100.559055 247.032 
+L 439.653543 247.032 
+L 439.653543 91.368 
+L 100.559055 91.368 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 100.559055 247.032 
+L 100.559055 91.368 
+" clip-path="url(#pdd65f89e65)" style="fill: none; stroke: #dce5eb; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2"/>
+     <g id="text_1">
+      <text style="font-size: 10px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #5c6f7b" x="100.559055" y="260.772" transform="rotate(-0 100.559055 260.772)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 202.287402 247.032 
+L 202.287402 91.368 
+" clip-path="url(#pdd65f89e65)" style="fill: none; stroke: #dce5eb; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4"/>
+     <g id="text_2">
+      <text style="font-size: 10px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #5c6f7b" x="202.287402" y="260.772" transform="rotate(-0 202.287402 260.772)">6</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 304.015748 247.032 
+L 304.015748 91.368 
+" clip-path="url(#pdd65f89e65)" style="fill: none; stroke: #dce5eb; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6"/>
+     <g id="text_3">
+      <text style="font-size: 10px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #5c6f7b" x="304.015748" y="260.772" transform="rotate(-0 304.015748 260.772)">12</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 405.744094 247.032 
+L 405.744094 91.368 
+" clip-path="url(#pdd65f89e65)" style="fill: none; stroke: #dce5eb; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8"/>
+     <g id="text_4">
+      <text style="font-size: 10px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #5c6f7b" x="405.744094" y="260.772" transform="rotate(-0 405.744094 260.772)">18</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_9"/>
+     <g id="text_5">
+      <text style="font-size: 10px; font-family: 'Source Sans 3'; text-anchor: end; fill: #172b3a" x="97.059055" y="112.524049" transform="rotate(-0 97.059055 112.524049)">Хронология</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_10"/>
+     <g id="text_6">
+      <text style="font-size: 10px; font-family: 'Source Sans 3'; text-anchor: end; fill: #172b3a" x="97.059055" y="143.422025" transform="rotate(-0 97.059055 143.422025)">Лексический</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_11"/>
+     <g id="text_7">
+      <text style="font-size: 10px; font-family: 'Source Sans 3'; text-anchor: end; fill: #172b3a" x="97.059055" y="174.32" transform="rotate(-0 97.059055 174.32)">Векторный</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_12"/>
+     <g id="text_8">
+      <text style="font-size: 10px; font-family: 'Source Sans 3'; text-anchor: end; fill: #172b3a" x="97.059055" y="205.217975" transform="rotate(-0 97.059055 205.217975)">Гибридный</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_13"/>
+     <g id="text_9">
+      <text style="font-size: 10px; font-family: 'Source Sans 3'; text-anchor: end; fill: #172b3a" x="97.059055" y="236.115951" transform="rotate(-0 97.059055 236.115951)">Граф + гибрид</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 100.559055 98.443636 
+L 253.151575 98.443636 
+L 253.151575 116.364462 
+L 100.559055 116.364462 
+z
+" clip-path="url(#pdd65f89e65)" style="fill: #087f8c"/>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #ffffff" x="176.855315" y="110.836049" transform="rotate(-0 176.855315 110.836049)">9</text>
+   </g>
+   <g id="patch_4">
+    <path d="M 253.151575 98.443636 
+L 287.061024 98.443636 
+L 287.061024 116.364462 
+L 253.151575 116.364462 
+z
+" clip-path="url(#pdd65f89e65)" style="fill: #c88918"/>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="270.106299" y="110.836049" transform="rotate(-0 270.106299 110.836049)">2</text>
+   </g>
+   <g id="patch_5">
+    <path d="M 287.061024 98.443636 
+L 405.744094 98.443636 
+L 405.744094 116.364462 
+L 287.061024 116.364462 
+z
+" clip-path="url(#pdd65f89e65)" style="fill: #bbc8d0"/>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="346.402559" y="110.836049" transform="rotate(-0 346.402559 110.836049)">7</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Source Sans 3'; text-anchor: start; fill: #087f8c" x="410.830512" y="110.524049" transform="rotate(-0 410.830512 110.524049)">9/18</text>
+   </g>
+   <g id="patch_6">
+    <path d="M 100.559055 129.341612 
+L 168.377953 129.341612 
+L 168.377953 147.262437 
+L 100.559055 147.262437 
+z
+" clip-path="url(#pdd65f89e65)" style="fill: #087f8c"/>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #ffffff" x="134.468504" y="141.734025" transform="rotate(-0 134.468504 141.734025)">4</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 168.377953 129.341612 
+L 185.332677 129.341612 
+L 185.332677 147.262437 
+L 168.377953 147.262437 
+z
+" clip-path="url(#pdd65f89e65)" style="fill: #c88918"/>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="176.855315" y="141.734025" transform="rotate(-0 176.855315 141.734025)">1</text>
+   </g>
+   <g id="patch_8">
+    <path d="M 185.332677 129.341612 
+L 405.744094 129.341612 
+L 405.744094 147.262437 
+L 185.332677 147.262437 
+z
+" clip-path="url(#pdd65f89e65)" style="fill: #bbc8d0"/>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="295.538386" y="141.734025" transform="rotate(-0 295.538386 141.734025)">13</text>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Source Sans 3'; text-anchor: start; fill: #087f8c" x="410.830512" y="141.422025" transform="rotate(-0 410.830512 141.422025)">4/18</text>
+   </g>
+   <g id="patch_9">
+    <path d="M 100.559055 160.239587 
+L 304.015748 160.239587 
+L 304.015748 178.160413 
+L 100.559055 178.160413 
+z
+" clip-path="url(#pdd65f89e65)" style="fill: #087f8c"/>
+   </g>
+   <g id="text_18">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #ffffff" x="202.287402" y="172.632" transform="rotate(-0 202.287402 172.632)">12</text>
+   </g>
+   <g id="patch_10">
+    <path d="M 304.015748 160.239587 
+L 337.925197 160.239587 
+L 337.925197 178.160413 
+L 304.015748 178.160413 
+z
+" clip-path="url(#pdd65f89e65)" style="fill: #c88918"/>
+   </g>
+   <g id="text_19">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="320.970472" y="172.632" transform="rotate(-0 320.970472 172.632)">2</text>
+   </g>
+   <g id="patch_11">
+    <path d="M 337.925197 160.239587 
+L 405.744094 160.239587 
+L 405.744094 178.160413 
+L 337.925197 178.160413 
+z
+" clip-path="url(#pdd65f89e65)" style="fill: #bbc8d0"/>
+   </g>
+   <g id="text_20">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="371.834646" y="172.632" transform="rotate(-0 371.834646 172.632)">4</text>
+   </g>
+   <g id="text_21">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Source Sans 3'; text-anchor: start; fill: #087f8c" x="410.830512" y="172.32" transform="rotate(-0 410.830512 172.32)">12/18</text>
+   </g>
+   <g id="patch_12">
+    <path d="M 100.559055 191.137563 
+L 304.015748 191.137563 
+L 304.015748 209.058388 
+L 100.559055 209.058388 
+z
+" clip-path="url(#pdd65f89e65)" style="fill: #087f8c"/>
+   </g>
+   <g id="text_22">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #ffffff" x="202.287402" y="203.529975" transform="rotate(-0 202.287402 203.529975)">12</text>
+   </g>
+   <g id="patch_13">
+    <path d="M 304.015748 191.137563 
+L 337.925197 191.137563 
+L 337.925197 209.058388 
+L 304.015748 209.058388 
+z
+" clip-path="url(#pdd65f89e65)" style="fill: #c88918"/>
+   </g>
+   <g id="text_23">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="320.970472" y="203.529975" transform="rotate(-0 320.970472 203.529975)">2</text>
+   </g>
+   <g id="patch_14">
+    <path d="M 337.925197 191.137563 
+L 405.744094 191.137563 
+L 405.744094 209.058388 
+L 337.925197 209.058388 
+z
+" clip-path="url(#pdd65f89e65)" style="fill: #bbc8d0"/>
+   </g>
+   <g id="text_24">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="371.834646" y="203.529975" transform="rotate(-0 371.834646 203.529975)">4</text>
+   </g>
+   <g id="text_25">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Source Sans 3'; text-anchor: start; fill: #087f8c" x="410.830512" y="203.217975" transform="rotate(-0 410.830512 203.217975)">12/18</text>
+   </g>
+   <g id="patch_15">
+    <path d="M 100.559055 222.035538 
+L 320.970472 222.035538 
+L 320.970472 239.956364 
+L 100.559055 239.956364 
+z
+" clip-path="url(#pdd65f89e65)" style="fill: #087f8c"/>
+   </g>
+   <g id="text_26">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #ffffff" x="210.764764" y="234.427951" transform="rotate(-0 210.764764 234.427951)">13</text>
+   </g>
+   <g id="patch_16">
+    <path d="M 320.970472 222.035538 
+L 337.925197 222.035538 
+L 337.925197 239.956364 
+L 320.970472 239.956364 
+z
+" clip-path="url(#pdd65f89e65)" style="fill: #c88918"/>
+   </g>
+   <g id="text_27">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="329.447835" y="234.427951" transform="rotate(-0 329.447835 234.427951)">1</text>
+   </g>
+   <g id="patch_17">
+    <path d="M 337.925197 222.035538 
+L 405.744094 222.035538 
+L 405.744094 239.956364 
+L 337.925197 239.956364 
+z
+" clip-path="url(#pdd65f89e65)" style="fill: #bbc8d0"/>
+   </g>
+   <g id="text_28">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Source Sans 3'; text-anchor: middle; fill: #172b3a" x="371.834646" y="234.427951" transform="rotate(-0 371.834646 234.427951)">4</text>
+   </g>
+   <g id="text_29">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Source Sans 3'; text-anchor: start; fill: #087f8c" x="410.830512" y="234.115951" transform="rotate(-0 410.830512 234.115951)">13/18</text>
+   </g>
+  </g>
+  <g id="patch_18">
+   <path d="M 102.897638 274.104 
+L 111.316535 274.104 
+L 111.316535 268.0128 
+L 102.897638 268.0128 
+z
+" style="fill: #087f8c"/>
+  </g>
+  <g id="patch_19">
+   <path d="M 212.811024 274.104 
+L 221.229921 274.104 
+L 221.229921 268.0128 
+L 212.811024 268.0128 
+z
+" style="fill: #c88918"/>
+  </g>
+  <g id="patch_20">
+   <path d="M 322.724409 274.104 
+L 331.143307 274.104 
+L 331.143307 268.0128 
+L 322.724409 268.0128 
+z
+" style="fill: #bbc8d0"/>
+  </g>
+  <g id="text_30">
+   <text style="font-weight: 700; font-size: 9px; font-family: 'Source Sans 3'; text-anchor: start; fill: #087f8c" x="18.708661" y="17.676" transform="rotate(-0 18.708661 17.676)">НОВАЯ СЛЕПАЯ ОЦЕНКА · NEW_BLIND_REVIEW / 2026-11-07</text>
+  </g>
+  <g id="text_31">
+   <text style="font-weight: 700; font-size: 17px; font-family: 'Source Sans 3'; text-anchor: start; fill: #172b3a" x="18.708661" y="39.404" transform="rotate(-0 18.708661 39.404)">Качество ответов в отдельной оценке</text>
+  </g>
+  <g id="text_32">
+   <text style="font-size: 10px; font-family: 'Source Sans 3'; text-anchor: start; fill: #5c6f7b" x="18.708661" y="62.692" transform="rotate(-0 18.708661 62.692)">Правильность содержания относительно полной истории</text>
+  </g>
+  <g id="text_33">
+   <text style="font-size: 10px; font-family: 'Source Sans 3'; text-anchor: start; fill: #172b3a" x="114.590551" y="274.1784" transform="rotate(-0 114.590551 274.1784)">Верно</text>
+  </g>
+  <g id="text_34">
+   <text style="font-size: 10px; font-family: 'Source Sans 3'; text-anchor: start; fill: #172b3a" x="224.503937" y="274.1784" transform="rotate(-0 224.503937 274.1784)">Частично</text>
+  </g>
+  <g id="text_35">
+   <text style="font-size: 10px; font-family: 'Source Sans 3'; text-anchor: start; fill: #172b3a" x="334.417323" y="274.1784" transform="rotate(-0 334.417323 274.1784)">Неверно</text>
+  </g>
+  <g id="text_36">
+   <text style="font-size: 10px; font-family: 'Source Sans 3'; text-anchor: start; fill: #172b3a" x="18.708661" y="296.188" transform="rotate(-0 18.708661 296.188)">n = 18 ответов на режим. 5 режимов × 3 истории × 6 вопросов = 90 ответов.</text>
+  </g>
+  <g id="text_37">
+   <text style="font-size: 8px; font-family: 'Source Sans 3'; fill: #5c6f7b" transform="translate(18.708661 312.661225)">Описательная слепая оценка. Согласованность между оценщиками не измерялась.</text>
+   <text style="font-size: 8px; font-family: 'Source Sans 3'; fill: #5c6f7b" transform="translate(18.708661 325.4568)">Проверки значимости нет. Превосходство какого-либо режима не доказано.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pdd65f89e65">
+   <rect x="100.559055" y="91.368" width="339.094488" height="155.664"/>
+  </clipPath>
+ </defs>
+</svg>
