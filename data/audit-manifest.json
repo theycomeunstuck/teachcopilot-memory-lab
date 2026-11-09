@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "publicData": "synthetic_only",
+  "auditDataSha256": "3fb1c3ea206d887c6304b97d197c5161c0bdbfc0ff35442b0c2b9c7c6b4f9b18",
+  "coverage": {
+    "histories": 3,
+    "lessons": 30,
+    "turns": 2666,
+    "questions": 18,
+    "cases": 90,
+    "modes": 5,
+    "unanswerableQuestions": 3
+  },
+  "sourceFiles": [
+    {
+      "label": "Полные синтетические истории",
+      "sha256": "780c7ae9d83d5832acbfddb0975753cf6560c8b93f1d2b6a688841f9e98e4731",
+      "bytes": 411981
+    },
+    {
+      "label": "Вопросы",
+      "sha256": "439e3fa78685bd62b9aa8b9d4f406897d1f618439e57911daeed25ad0a866669",
+      "bytes": 5402
+    },
+    {
+      "label": "Эталоны и исходные ID",
+      "sha256": "fa929ea55b897991b45a328eb527f1539478dc1453a011b952a03d8252dc62e8",
+      "bytes": 5904
+    },
+    {
+      "label": "Сохранённые ответы и память",
+      "sha256": "b4d6f99aee56dc3ff5b3ace81a110c5ecdc54decc15bf1ffa334ccfa39166398",
+      "bytes": 747226
+    },
+    {
+      "label": "Аудит результатов",
+      "sha256": "c2512d8eae012710e50b1691ec6c28bba1ae510d4f0a38e214e9c0b927674e62",
+      "bytes": 269556
+    }
+  ],
+  "checks": {
+    "answerRecords": 90,
+    "matchingRetrievalChecks": 90,
+    "matchingReviewRows": 90,
+    "privateBlindMappingRead": false
+  }
+}

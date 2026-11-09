@@ -9,7 +9,9 @@
   <title>Память между уроками · TeachCopilot</title>
   <link rel="stylesheet" href="styles.css">
   <script defer src="data/results.js"></script>
+  <script defer src="data/audit-data.js"></script>
   <script defer src="app.js"></script>
+  <script defer src="audit.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">К содержанию</a>
@@ -18,7 +20,7 @@
       <svg width="37" height="38" viewBox="0 0 37 38" aria-hidden="true"><path d="M9 10 27 8M9 10l10 19M27 8l-8 21" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="9" cy="10" r="4.5" fill="#0a8b83"/><circle cx="27" cy="8" r="4.5" fill="#123d68"/><circle cx="19" cy="29" r="4.5" fill="#c48b24"/></svg>
       <span>TeachCopilot<small>Исследование персональной памяти</small></span>
     </a>
-    <nav aria-label="Разделы"><a href="#methods">Как устроена память</a><a href="#results">Что измерили</a><a href="#examples">Живые примеры</a><a class="nav-report" href="#downloads">Материалы <span aria-hidden="true">↗</span></a></nav>
+    <nav aria-label="Разделы"><a href="#methods">Как устроена память</a><a href="#results">Что измерили</a><a href="#audit">Проверить цифры</a><a href="#examples">Живые примеры</a><a class="nav-report" href="#downloads">Материалы <span aria-hidden="true">↗</span></a></nav>
   </header>
 
   <main id="main">
@@ -49,6 +51,18 @@
         <div id="metric-panel" role="tabpanel" aria-labelledby="metric-tab-quality" tabindex="0"><div class="chart-heading"><div><h3 id="chart-title">Сколько ответов оценены корректными</h3><p id="chart-subtitle"></p></div><div class="latency-switch" id="latency-switch" hidden><span>Время:</span><button type="button" data-latency="retrieve" aria-pressed="true">retrieve</button><button type="button" data-latency="pipeline" aria-pressed="false">полный поиск</button></div></div><div id="results-chart" class="results-chart" aria-live="polite"><p class="data-pending">Подключаем проверенные данные…</p></div><p id="chart-footnote" class="chart-footnote"></p></div>
       </div>
       <div class="finding"><div class="finding-symbol" aria-hidden="true">≈</div><div><h3>Для текущего прототипа – hybrid</h3><p id="finding-text">Загружаем проверенные результаты сравнения.</p><p class="muted">Вывод относится к этому малому синтетическому корпусу и автоматической оценке. Он не определяет лучший способ памяти вообще.</p></div><a href="#examples">Посмотреть, где ответы различаются <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <section id="audit" class="section audit-section wrap" aria-labelledby="audit-title">
+      <div class="section-intro audit-intro"><div><p class="section-kicker">Проверяемая цепочка</p><h2 id="audit-title">Не верить числу.<br>Открыть его основание.</h2></div><div class="section-copy"><p>Каждая строка ниже – сохранённый прогон: вопрос, выбранные исходные реплики, переданная памяти строка, ответ и автоматическая оценка.</p><p class="muted">Все тексты синтетические. Это аудит эксперимента, а не демонстрация данных ребёнка.</p></div></div>
+      <div class="audit-explainer"><strong>Что считается сигналом срабатывания поиска:</strong> эталонная реплика из разметки вошла в выбранную память. Это отдельно от того, сослался ли на неё сам ответ и отдельно от автоматического вердикта качества. Попадание и ссылка показывают доступность и указание источника, но сами по себе не доказывают, что именно он вызвал ответ модели.</div>
+      <div class="audit-controls" aria-label="Выбор проверяемого прогона"><label>История<select id="audit-history"></select></label><label>Вопрос<select id="audit-question"></select></label><label>Метод<select id="audit-mode"></select></label><label>Показать диалог<select id="audit-transcript-view"></select></label></div>
+      <div id="audit-summary" class="audit-summary" aria-live="polite"></div>
+      <div id="audit-case" class="audit-case" aria-live="polite"></div>
+      <div class="audit-transcript-heading"><div><p class="section-kicker">Исходный диалог</p><h3>Реплики до поиска</h3></div><p id="audit-transcript-note" class="muted"></p></div>
+      <div id="audit-transcript" class="audit-transcript" aria-live="polite"></div>
+      <details class="audit-table-details"><summary>Все сохранённые случаи и автоматические вердикты</summary><p class="audit-table-intro">Эта таблица содержит все комбинации истории, вопроса и метода. Откройте любую строку, чтобы увидеть её точные исходные реплики и память.</p><div class="audit-table-controls"><label>История<select id="audit-table-history"></select></label><label>Метод<select id="audit-table-mode"></select></label><label>Вердикт<select id="audit-table-verdict"></select></label></div><div id="audit-table-count" class="audit-table-count"></div><div class="audit-table-scroll"><table><thead><tr><th>История / вопрос</th><th>Метод</th><th>Эталон в памяти</th><th>Эталон в ссылках ответа</th><th>Автовердикт</th><th><span class="visually-hidden">Открыть</span></th></tr></thead><tbody id="audit-table-body"></tbody></table></div></details>
+      <div class="audit-data-links"><div><strong>Скачать и перепроверить</strong><p>Полный публичный набор содержит 90 прогонов, синтетические диалоги, выбранные ID и хеши исходных файлов.</p></div><div><a href="data/audit-data.json" download>Полные данные JSON</a><a href="data/audit-manifest.json" download>Манифест SHA-256</a></div></div>
     </section>
 
     <section id="examples" class="section examples-section" aria-labelledby="examples-title"><div class="wrap">
