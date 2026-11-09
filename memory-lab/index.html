@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#143c5d">
+  <meta name="description" content="Исследуйте, как поиск находит прошлые фрагменты в вымышленных учебных переписках.">
+  <title>Лаборатория памяти · TeachCopilot</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="dialogues.js"></script>
+  <script defer src="search-core.js"></script>
+  <script defer src="index-data.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#query">Перейти к поиску</a>
+  <header class="topbar">
+    <a href="../" class="brand"><span class="brand-mark" aria-hidden="true">✳</span><span>TeachCopilot<small>Лаборатория памяти</small></span></a>
+    <nav aria-label="Навигация"><a href="../#results">Исследование</a><a href="../#audit">Проверить цифры</a><a href="#stack">Что внутри</a></nav>
+  </header>
+  <main>
+    <div class="page-wrap">
+      <section class="hero" aria-labelledby="title">
+        <div><p class="eyebrow"><span></span> Учебная лаборатория</p><h1 id="title">Что можно найти<br>в прошлых разговорах?</h1><p class="lead">Выберите историю, задайте вопрос и проследите путь от поиска к исходной реплике.</p></div>
+        <aside class="notice" aria-label="Ограничения демонстрации"><p class="notice-title"><span aria-hidden="true">ⓘ</span> Это демонстрация поиска</p><p>Это не живой чат с «Алёной». Здесь нет подключения к базе проекта и генерации новых ответов модели.</p><p><strong>Все истории вымышлены.</strong> Не вводите сведения настоящих детей.</p></aside>
+      </section>
+      <div class="workspace" id="search">
+        <section class="chat-panel" aria-labelledby="chat-title">
+          <header class="panel-header"><div><p class="caption">История для проверки</p><h2 id="chat-title">Учебная переписка</h2></div><span class="demo-pill">синтетические данные</span></header>
+          <div class="history-picker"><label for="history-select">Выберите ученика</label><select id="history-select"></select><p id="history-description"></p></div>
+          <div class="chat-guide"><span class="guide-dot selected-dot"></span> найдено <span class="guide-dot expected-dot"></span> эталон примера <button type="button" id="show-all">Показать всю историю</button></div>
+          <div id="conversation" class="conversation" tabindex="0" aria-label="Синтетическая переписка"><p class="pending">Загружаем историю…</p></div>
+        </section>
+        <section class="search-panel" aria-labelledby="search-title">
+          <header class="panel-header search-header"><div><p class="caption">Попробуйте сами</p><h2 id="search-title">Найти в памяти</h2></div><span class="search-icon" aria-hidden="true">⌕</span></header>
+          <p class="panel-intro">Спросите о прошлых занятиях. Поиск вернёт фрагменты переписки, а не готовый ответ.</p>
+          <form id="search-form">
+            <label class="field-label" for="query">Ваш вопрос</label>
+            <div class="query-box"><textarea id="query" rows="3" maxlength="500" placeholder="Например: какая подсказка помогла?" required></textarea><button type="submit" id="search-button">Найти <span aria-hidden="true">↗</span></button></div>
+            <p class="helper">Текст вопроса обрабатывается в вашем браузере.</p>
+            <fieldset class="methods"><legend>Как искать</legend><label><input type="radio" name="method" value="hybrid" checked><span><b>Комбинированный</b><small>слова + смысл</small></span></label><label><input type="radio" name="method" value="semantic"><span><b>По смыслу</b><small>похожие формулировки</small></span></label><label><input type="radio" name="method" value="lexical"><span><b>По словам</b><small>совпадения в тексте</small></span></label></fieldset>
+            <details class="date-filter"><summary>Ограничить по датам</summary><div><label>С <input type="date" id="date-from"></label><label>По <input type="date" id="date-to"></label></div><p>Фильтр использует дату занятия.</p></details>
+          </form>
+          <div class="examples"><p class="field-label">Вопросы для примера</p><div id="examples" class="example-list"></div></div>
+          <div id="status" class="status" role="status" aria-live="polite">Для смыслового поиска браузер один раз загрузит модель и файлы примерно на 135 МБ. Поиск по словам доступен сразу.</div>
+          <div class="results-heading"><h3>Что нашлось</h3><span id="result-count"></span></div>
+          <div id="results" class="results" aria-live="polite"><div class="empty"><span aria-hidden="true">⌕</span><p>Здесь появятся фрагменты и объяснение, почему поиск их выбрал.</p></div></div>
+          <p class="results-caveat">Близость и совпадение слов – сигналы поиска, а не доказательство того, что вывод о ребёнке верен. Проверяйте контекст.</p>
+        </section>
+      </div>
+      <section class="walkthrough" aria-labelledby="walkthrough-title"><div><p class="eyebrow">Как читать результат</p><h2 id="walkthrough-title">Одна находка – три проверки</h2><p>Например, ученик сначала ошибся, а затем исправился после подсказки. Один правильный ответ в отрыве от предыдущих реплик может создать ложное впечатление о самостоятельности.</p></div><ol><li><b>Вопрос</b><span>Что помогло исправить ошибку?</span></li><li><b>Найденный фрагмент</b><span>Рядом находятся ошибка, подсказка и исправление.</span></li><li><b>Проверка человеком</b><span>Посмотрите исходные реплики и условия, прежде чем делать вывод.</span></li></ol></section>
+      <section class="stack" id="stack" aria-labelledby="stack-title"><div class="stack-heading"><div><p class="eyebrow">Для любопытных</p><h2 id="stack-title">Что здесь используется</h2></div><p>Несколько контуров решают разные задачи. Наличие компонента в коде не означает, что он сейчас развёрнут.</p></div><div class="stack-grid"><article><span>01 / Эта страница</span><h3>Браузерная демонстрация</h3><p>HTML, CSS и JavaScript на GitHub Pages. Transformers.js и multilingual-e5-small запускают поиск по смыслу в браузере. Загрузка модели идёт из Hugging Face и jsDelivr; запросы не отправляются на сервер модели.</p><p class="stack-note">Это отдельная реализация, не тест реальной базы «Алёны».</p></article><article><span>02 / Локальный прототип</span><h3>Данные и модель</h3><p>Python/FastAPI, PostgreSQL с pgvector и Ollama. В локальной конфигурации используются Gemma и BGE-M3; реализован гибридный поиск по разрешённым источникам.</p><p class="stack-note">Фактическая доступность зависит от запуска и настройки локальных сервисов.</p></article><article><span>03 / Исследование</span><h3>Альтернативные подходы</h3><p>Graphiti хранит связи, Mem0 формирует текстовые кандидаты памяти, LangGraph управляет шагами поиска. Эти варианты исследовались отдельно; графовый путь в приложении экспериментальный.</p><p class="stack-note">Синтетические исследования и автоматические оценки не доказывают готовности к работе с детьми.</p></article></div><p class="stack-links"><a href="../#results">Посмотреть результаты исследования</a><a href="../#audit">Проверить сохранённые прогоны</a></p></section>
+    </div>
+  </main>
+  <footer class="footer page-wrap"><span>TeachCopilot · лаборатория памяти</span><span>Вымышленные диалоги. Проверяемые источники.</span><a href="../">На главную</a></footer>
+</body>
+</html>
