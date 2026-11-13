@@ -3,6 +3,7 @@
 (() => {
   const data = window.ANSWER_EVAL_20261113;
   const bars = document.querySelector("#own-answer-bars");
+  const breakdown = document.querySelector("#own-answer-breakdown");
   const questionSelect = document.querySelector("#own-answer-question");
   const caseView = document.querySelector("#own-answer-case");
   const esc = value => String(value ?? "").replace(/[&<>"']/g,
@@ -20,6 +21,28 @@
     november_fp: {title:"Ноябрьские вопросы от первого лица", detail:"42 вопроса с эталоном + 6 без ответа в истории"},
     new_scenario: {title:"Новые сценарии 13 ноября", detail:"уход в отказ, перескок темы, точная формулировка · 12 вопросов"},
   };
+  const CATEGORY_LABELS = {
+    old_fact:"старый факт", paraphrase_detail:"пересказ с деталью", unfinished_task:"незавершённое дело",
+    ambiguous_short_reply:"короткий неоднозначный ответ", abstract_recall:"общий вывод из занятия",
+    temporal:"время и сроки", preference_change:"сменившееся предпочтение", absent_fact:"факта в истории нет",
+    hedge_recall:"ребёнок ответил «не знаю»", topic_switch_recall:"перескок темы", exact_wording_recall:"точная формулировка",
+  };
+  const categoryLabel = category => CATEGORY_LABELS[category] || category;
+  const GROUPS = [
+    {origin:"november_fp", label:"Ноябрьские · от первого лица"},
+    {origin:"new_scenario", label:"Новые сценарии 13.11"},
+  ];
+  const CATEGORY_ORDER = {
+    november_fp:["old_fact","paraphrase_detail","unfinished_task","ambiguous_short_reply","abstract_recall","temporal","preference_change","absent_fact"],
+    new_scenario:["hedge_recall","topic_switch_recall","exact_wording_recall"],
+  };
+  const plural = (count, one, few, many) => {
+    const mod10 = count % 10, mod100 = count % 100;
+    if (mod10 === 1 && mod100 !== 11) return one;
+    if (mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14)) return few;
+    return many;
+  };
+  const questionsLabel = count => `${count} ${plural(count, "вопрос", "вопроса", "вопросов")}`;
   if (!data || data.data_origin !== "synthetic_llm_generated" || !Array.isArray(data.rows)) {
     bars.innerHTML = '<p class="error">Сохранённые результаты не загрузились. Их можно открыть в JSON ниже.</p>';
     questionSelect.disabled = true;
@@ -48,8 +71,67 @@
       </div>`;
   }).join("");
 
-  questionSelect.innerHTML = data.questions.map(question =>
-    `<option value="${esc(question.request_id)}">${esc(question.origin === "new_scenario" ? "новый · " : "ноябрь · ")}${esc(question.request_id)} · ${esc(question.text)}</option>`).join("");
+  const byCategory = new Map();
+  data.rows.forEach(row => {
+    const key = `${row.origin}:${row.category}`;
+    if (!byCategory.has(key)) byCategory.set(key, []);
+    byCategory.get(key).push(row);
+  });
+  const booleanCell = (rows, field) => {
+    const eligible = rows.filter(row => typeof row[field] === "boolean");
+    if (!eligible.length) return null;
+    const yes = eligible.filter(row => row[field]).length;
+    return {text:percent(yes / eligible.length), detail:`${yes} из ${eligible.length}`};
+  };
+  const refusalCell = rows => {
+    const absentRows = rows.filter(row => !row.gold_turn_ids.length);
+    if (!absentRows.length) return null;
+    const yes = absentRows.filter(row => row.correct_refusal).length;
+    return {text:percent(yes / absentRows.length), detail:`${yes} из ${absentRows.length}`};
+  };
+  const cellHtml = cell => cell
+    ? `<strong>${esc(cell.text)}</strong><span class="own-breakdown-sub">${esc(cell.detail)}</span>`
+    : '<span class="own-breakdown-dash">–</span>';
+  const sizes = [];
+  const groupsHtml = GROUPS.map(group => {
+    const present = [...new Set(data.rows.filter(row => row.origin === group.origin).map(row => row.category))];
+    const categories = CATEGORY_ORDER[group.origin].filter(category => present.includes(category))
+      .concat(present.filter(category => !CATEGORY_ORDER[group.origin].includes(category)));
+    if (!categories.length) return "";
+    const originCount = data.rows.filter(row => row.origin === group.origin).length;
+    const body = categories.map(category => {
+      const rows = byCategory.get(`${group.origin}:${category}`);
+      sizes.push(rows.length);
+      const goldCount = rows.filter(row => row.gold_turn_ids.length).length;
+      const absentCount = rows.length - goldCount;
+      const sub = questionsLabel(rows.length) + (absentCount ? ` · без ответа в истории: ${absentCount}` : "");
+      return `<tr><th scope="row" class="own-breakdown-cat"><strong>${esc(categoryLabel(category))}</strong><span class="own-breakdown-sub">${esc(sub)}</span></th>
+        <td class="own-breakdown-val">${cellHtml(booleanCell(rows, "found_one"))}</td>
+        <td class="own-breakdown-val">${cellHtml(booleanCell(rows, "found_all"))}</td>
+        <td class="own-breakdown-val">${cellHtml(booleanCell(rows, "answer_correct"))}</td>
+        <td class="own-breakdown-val">${cellHtml(refusalCell(rows))}</td></tr>`;
+    }).join("");
+    return `<tbody><tr class="own-breakdown-group"><th colspan="5" scope="colgroup">${esc(group.label)} · ${esc(questionsLabel(originCount))}</th></tr>${body}</tbody>`;
+  }).join("");
+  if (groupsHtml) {
+    const sizeNote = sizes.length
+      ? `<p class="own-breakdown-foot">В каждой ячейке от ${Math.min(...sizes)} до ${Math.max(...sizes)} вопросов: это синтетические истории одного прогона. Разбивка показывает, где поиск справлялся лучше или хуже именно в этом наборе, и не говорит ничего о реальных детях.</p>`
+      : "";
+    breakdown.innerHTML = `<h3>Разбивка по категориям</h3>
+      <p class="own-breakdown-lead">Те же доли, что в карточках выше, но отдельно по каждой категории вопросов – пересчитаны из тех же сохранённых строк.</p>
+      <div class="own-breakdown-scroll"><table class="own-breakdown-table">
+      <thead><tr><th scope="col">Категория</th><th scope="col">Нашли хотя бы один эталон</th><th scope="col">Нашли все эталонные</th><th scope="col">Ответ верен (автопроверка)*</th><th scope="col">Корректный отказ</th></tr></thead>
+      ${groupsHtml}</table></div>
+      <p class="own-breakdown-foot">* Верность ответа автопроверкой оценена только для новых сценариев 13 ноября: для ноябрьских вопросов ключевые основы слов не были заданы до прогона, и такая оценка не проводится. «–» – метрика к категории не применяется или не оценивалась.</p>
+      ${sizeNote}`;
+  }
+
+  questionSelect.innerHTML = GROUPS.map(group => {
+    const list = data.questions.filter(question => question.origin === group.origin);
+    if (!list.length) return "";
+    return `<optgroup label="${esc(group.label)}">${list.map(question =>
+      `<option value="${esc(question.request_id)}">${esc(categoryLabel(question.category))} · ${esc(question.request_id)} · ${esc(question.text)}</option>`).join("")}</optgroup>`;
+  }).join("");
 
   function pickQuestion(predicate) {
     const found = data.rows.find(row => predicate(row) && questions.has(row.request_id));
