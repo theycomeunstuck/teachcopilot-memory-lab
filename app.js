@@ -147,7 +147,7 @@
   });
   $("#latency-switch").addEventListener("click",event=>{const b=event.target.closest("[data-latency]");if(!b)return;state.latency=b.dataset.latency;$$("#latency-switch button").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));drawChart();});
   const hybrid=data.modes.find(m=>m.id==="hybrid"),graph=data.modes.find(m=>m.id==="graph_hybrid");
-  $("#finding-text").textContent=`В прежней оценке hybrid и graph_hybrid – по ${hybrid.stats.correct}/${hybrid.stats.total} корректных ответов. В новой – 12/18 и 13/18 соответственно. Медиана retrieve составляет ${sec(hybrid.stats.warmRetrieve.p50)} у hybrid и ${sec(graph.stats.warmRetrieve.p50)} с графом. Для прототипа hybrid – практический выбор по простоте и скорости. Граф полнее находит эталонные источники (${pct(graph.stats.sourceRecall)} против ${pct(hybrid.stats.sourceRecall)}). Один ответ преимущества в малой выборке не устанавливает победителя.`;
+  $("#finding-text").textContent=`В новой автоматической оценке hybrid и поиск по смыслу получили одинаковый вердикт на каждом из 18 вопросов. У graph_hybrid – 13/18 корректных ответов, у hybrid – 12/18. Медиана retrieve составляет ${sec(hybrid.stats.warmRetrieve.p50)} у hybrid и ${sec(graph.stats.warmRetrieve.p50)} с графом. Граф полнее находит эталонные источники (${pct(graph.stats.sourceRecall)} против ${pct(hybrid.stats.sourceRecall)}), но один ответ преимущества в малой выборке не устанавливает победителя.`;
 
   const pairs=[...new Map(data.examples.map(e=>[e.pairId,e])).values()];
   const pairLabels={"pm-h07-q02":"Компас и маяк – уже интерес?","pm-h09-q01":"Как подсказка исправила цикл робота?","pm-h09-q05":"К чему относилось «не знаю»? Спорная оценка","pm-h07-q06":"Что известно о музыкальном инструменте?"};
